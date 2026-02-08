@@ -29,11 +29,22 @@ You need to install the following libraries to run the model evaluation script:
 
 ---
 
-# Sample Result Generated
+## Sample Result Generated
 
 <img width="768" height="194" alt="image" src="https://github.com/user-attachments/assets/f40bbe0c-1eae-47ec-a1dd-7fec3b917b8b" />
 
+---
+
+## PYPI Package Link
+
+https://pypi.org/project/Pulkit-Model-Evaluation/
 
 ---
+
+## Usage
+
 ```bash
 pip install torch transformers evaluate rouge_score pandas sentencepiece
+
+pip install Pulkit-Model-Evaluation
+
