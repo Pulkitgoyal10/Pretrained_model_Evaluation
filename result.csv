@@ -1,0 +1,5 @@
+Model,Rouge-Score,Inference-Time,Model-Size-MB,Topsis Score,Rank
+sshleifer/distilbart-cnn-12-6,0.3836,10.1116,1558.12,0.590907378524862,2
+t5-small,0.3294,5.1145,230.81,0.9174625648176091,1
+facebook/bart-large-cnn,0.3077,15.7363,1549.88,0.4514320445982169,3
+google/pegasus-xsum,0.2535,21.558,2924.22,0.0,4

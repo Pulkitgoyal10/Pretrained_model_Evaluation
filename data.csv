@@ -1,0 +1,5 @@
+Model,Rouge-Score,Inference-Time,Model-Size-MB
+sshleifer/distilbart-cnn-12-6,0.3836,10.1116,1558.12
+t5-small,0.3294,5.1145,230.81
+facebook/bart-large-cnn,0.3077,15.7363,1549.88
+google/pegasus-xsum,0.2535,21.558,2924.22
