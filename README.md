@@ -1,20 +1,39 @@
-# TOPSIS-YourName-1025
+# TOPSIS for Text Summarization Model Selection
 
-**Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS)**
+[![PyPI version](https://img.shields.io/pypi/v/Pulkit-Model-Evaluation.svg)](https://pypi.org/project/Pulkit-Model-Evaluation/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
-This Python package implements the TOPSIS method for Multi-Criteria Decision Making (MCDM). It takes a dataset of various options (models, products, etc.) with multiple criteria (features), accepts weights and impacts for each criterion, and ranks the options from best to worst.
+## 📋 Project Overview
 
-This is particularly useful for ranking pre-trained models, selecting best-fit hardware, or any scenario where you need to choose the "best" option based on conflicting metrics (e.g., High Accuracy vs. Low Latency).
+This project implements a structured, mathematical approach to selecting the best pre-trained **Text Summarization Model** from Hugging Face. It utilizes the **TOPSIS** (Technique for Order of Preference by Similarity to Ideal Solution) method to rank models based on multiple conflicting criteria such as ROUGE scores, Inference Time, and Model Size.
 
-## Installation
+The project is divided into two main components:
+1.  **Data Generation:** A Python script to evaluate Hugging Face models and generate performance metrics.
+2.  **TOPSIS Analysis:** A custom PyPI package (`Pulkit-Model-Evaluation`) that applies the TOPSIS algorithm to rank the models.
 
-You can install this package via pip:
+---
 
-## Installation
-`pip install Pulkit_Model_Evaluation`
+## 🚀 Part 1: Generating the Dataset
 
-## Usage
-`topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>`
+The first step involves running the evaluation script to test models like BART, T5, and Pegasus.
 
-## Example
-`topsis data.csv "0.25,0.25,0.25,0.25" "+,+,-,-" result.csv`
+### 1. Prerequisites
+You need to install the following libraries to run the model evaluation script:
+
+---
+
+## Sample Data Generated from pretrained models
+
+<img width="491" height="164" alt="image" src="https://github.com/user-attachments/assets/610afe31-6763-4df3-b9c4-effc9e0d1d97" />
+
+---
+
+# Sample Result Generated
+
+<img width="768" height="194" alt="image" src="https://github.com/user-attachments/assets/f40bbe0c-1eae-47ec-a1dd-7fec3b917b8b" />
+
+
+---
+```bash
+pip install torch transformers evaluate rouge_score pandas sentencepiece
